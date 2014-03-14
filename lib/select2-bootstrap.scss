@@ -306,12 +306,13 @@
   @include border-right-radius(0 !important);
 }
 
-.select2-dropdown-open [class^="select2-choice"] {
+.select2-dropdown-open:not(.select2-drop-above) [class^="select2-choice"] {
   @include border-bottom-radius(0 !important);
 }
 
 .select2-dropdown-open.select2-drop-above [class^="select2-choice"] {
   @include border-top-radius(0 !important);
+  background: $btn-default-bg;
 }
 
 /**
